@@ -2,12 +2,13 @@ Feature: A set of scenarios for testing the "example" module
 
   Scenario Outline: Testing customer checkouts an item
     Given customer is in Home Page
-    When customer checkouts an item
+    When customer selects "<Item>" from the product list
+#    When customer checkouts an item
     Then the item successfully has been added to checkout
 
     Examples:
-      | Username | Password |
-      | user1    | pass1     |
+        | Item |
+        | iPhone |
 
 
   Scenario Outline: Testing admin changes the 'Date Available' to a future date
