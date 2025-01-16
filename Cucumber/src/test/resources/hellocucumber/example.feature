@@ -2,7 +2,6 @@ Feature: A set of scenarios for testing the "example" module
 
   Scenario Outline: Testing customer checkouts an item
     Given customer is in Home Page
-    And customer is logged in with "<Username>" and "<Password>"
     When customer checkouts an item
     Then the item successfully has been added to checkout
 
@@ -17,7 +16,7 @@ Feature: A set of scenarios for testing the "example" module
     And admin changes the Date Available of the product to a future date
     Then the Date Available changed successfully to a future date in the admin browse
     And the customer does not sees the changed product
-    
+
     Examples:
       | Username | Password |
       | user2    | pass2     |
