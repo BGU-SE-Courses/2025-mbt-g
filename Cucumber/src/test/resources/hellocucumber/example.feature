@@ -20,4 +20,4 @@ Feature: A set of scenarios for testing the "example" module
 
     Examples:
       | Username | Password |
-      | user2    | pass2     |
+      | admin    | 1234     |

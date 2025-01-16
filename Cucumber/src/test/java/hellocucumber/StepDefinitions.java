@@ -36,7 +36,7 @@ public class StepDefinitions {
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(500));
 
         // Open the browser and navigate to openCart home page
-        driver.get("http://localhost/opencart/");
+        driver.get("http://localhost/opencart/upload");
 
         try {
             Thread.sleep(2000);
@@ -81,9 +81,7 @@ public class StepDefinitions {
         System.setProperty("webdriver.chrome.driver", chromeDriverPath);
         this.driver = new ChromeDriver();
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(500));
-
-        // TODO: Open the browser and navigate to openCart admin page
-        driver.get("http://localhost/opencart//");
+        driver.get("http://localhost/opencart//upload/admin/");
 
         try {
             Thread.sleep(2000);
@@ -92,17 +90,30 @@ public class StepDefinitions {
         }
     }
 
-//    @When("admin is logged in with {string} and {string}")
-//    public void admin_is_logged_in_with_and(String username, String password) {
-//        // find the username and password fields, fill them with the given input and click login
-//        WebElement usernameField = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("input-username")));
-//        WebElement passwordField = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("input-password")));
-//        WebElement loginButton = wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".btn-primary")));
-//
-//        usernameField.clear();
-//        usernameField.sendKeys(username);
-//        passwordField.clear();
-//        passwordField.sendKeys(password);
-//        loginButton.click();
-//    }
+    @When("admin is logged in with {string} and {string}")
+    public void admin_is_logged_in_with_and(String username, String password) {
+        input = username;
+        WebElement userNameBox = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//body/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/input[1]")));
+        userNameBox.clear();
+        userNameBox.sendKeys(input);
+        userNameBox.sendKeys(Keys.ENTER);
+        input = password;
+        WebElement passwordBox = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//body/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/form[1]/div[2]/div[1]/input[1]")));
+        passwordBox.clear();
+        passwordBox.sendKeys(input);
+        passwordBox.sendKeys(Keys.ENTER);
+
+        WebElement loginButton = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//body/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/form[1]/div[3]/button[1]")));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", loginButton);
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        loginButton.click();
+    }
+
+    @And("admin changes the Date Available of the product to a future date")
+    public void admin_changes_the_date_available_of_the_product_to_a_future_date() {
+    }
 }
