@@ -10,9 +10,9 @@ const username = 'admin';
 const password = '13579112';
 const xpaths = {
   customerSide: {
-    searchInput: "//*[@id='search']/input[1]",
-    searchButton: "//*[@id='search']/button[1]",
-    addToCartButton: "//*[@id='product-list']/div/div/div/form/div/button[1]",
+    searchInput: "//header[1]/div[1]/div[1]/div[2]/form[1]/input[1]",
+    searchButton: "//div[1]/div[2]/form[1]/button[1]/i[1]",
+    addToCartButton: "//div[2]/form[1]/div[1]/button[1]",
     checkoutButton: "//*[@id='top']/div[1]/div[2]/ul[1]/li[5]/a[1]/span[1]",
     addToCartPrice: "//*[@id='header-cart']/div[1]/button[1]",
     checkoutTotalPrice: "//*[@id='checkout-confirm']/div[1]/table[1]/tfoot[1]/tr[4]/td[2]",
@@ -36,4 +36,25 @@ const xpaths = {
   }
 
 }
-const exchangeDate = "2025-07-04"
+
+
+const scrolling={
+  down: function() {window.scrollTo(0, document.body.scrollHeight); pvg.success('yes');},
+  up: function() {window.scrollTo(0,(0,0));pvg.success('yes');}
+}
+// const scrolling = {
+//   down: function() {
+//     window.scrollTo({
+//       top: document.body.scrollHeight,
+//       behavior: 'smooth'
+//     });
+//     pvg.success('yes');
+//   },
+//   up: function() {
+//     window.scrollTo({
+//       top: 0,
+//       behavior: 'smooth'
+//     });
+//     pvg.success('yes');
+//   }
+// };
