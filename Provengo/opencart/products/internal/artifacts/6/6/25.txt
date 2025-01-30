@@ -1,0 +1,9 @@
+element click intercepted: Element is not clickable at point (102, 1005)
+  (Session info: chrome=132.0.6834.84)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.2', java.version: '17.0.8'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [90033cd0584058d3e39fe3370788fee0, clickElement {id=f.35B5024DF271E1A3DA4753C2AA918FFC.d.C1CF28CADD63A66D2A88855BCB501815.e.54}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.84, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: /var/folders/hb/jslp9rtd76d...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60290}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.1.29:4444/sess..., se:cdpVersion: 132.0.6834.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on mac (90033cd0584058d3e39fe3370788fee0)] -> xpath: //div[2]/form[1]/div[1]/button[1]]
+Session ID: 90033cd0584058d3e39fe3370788fee0
