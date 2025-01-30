@@ -1,4 +1,4 @@
-# Testing $$*TODO* software name$$ using Cucumber
+# Testing OpenCart using Cucumber
 This directory contains the cucumber files for testing the OpenCart module of theOpenCart e-commerce platform application.
 
 ## Running the tests
