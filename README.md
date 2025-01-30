@@ -60,7 +60,7 @@ mvn clean install
 
 We tested the **checkout process and product availability** in OpenCart. Our focus was on the following user stories:
 
-### User Story 1: Customer adds an item to checkout
+### User Story 1: Customer checkouts an item
 
 **Preconditions:**
 * A registered customer is logged in
@@ -73,7 +73,7 @@ We tested the **checkout process and product availability** in OpenCart. Our foc
 **Expected Outcome:**
 * The item is successfully added to checkout
 
-### User Story 2: Admin updates a product's availability
+### User Story 2: Admin changes the 'Date Available' to a future date
 
 **Preconditions:**
 * The admin is logged into the OpenCart admin panel
