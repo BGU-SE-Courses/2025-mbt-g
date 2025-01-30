@@ -4,7 +4,8 @@ This is a repository for the system-testing assignment of the Software Quality E
 
 ## Assignment Description
 
-In this assignment, we tested an open-source software called **OpenCart** (https://www.opencart.com/)
+In this assignment, we tested an open-source software called **OpenCart** (https://www.opencart.com/).
+
 OpenCart is an e-commerce platform that provides a shopping cart system with a wide range of features.
 
 ## Installation
