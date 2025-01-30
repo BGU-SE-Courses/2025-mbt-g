@@ -54,45 +54,5 @@ const xpaths = {
 
 };
 
-// const scrolling={
-//   down: function() {window.scrollTo(0, document.body.scrollHeight); pvg.success('yes');},
-//   up: function() {window.scrollTo(0,(0,0));pvg.success('yes');}
-// }
 
 
-
-
-// const scrolling = {
-//   down: function () {
-//     const element = document.querySelector("footer");
-//     if (element) {
-//       element.scrollIntoView({ behavior: "smooth", block: "center" });
-//       pvg.success('Scrolled to element');
-//     } else {
-//       pvg.error('Element not found');
-//     }
-//   }
-// };
-
-
-
-
-
-
-
-// const scrolling = {
-//   down: function() {
-//     window.scrollTo({
-//       top: document.body.scrollHeight,
-//       behavior: 'smooth'
-//     });
-//     pvg.success('yes');
-//   },
-//   up: function() {
-//     window.scrollTo({
-//       top: 0,
-//       behavior: 'smooth'
-//     });
-//     pvg.success('yes');
-//   }
-// };
