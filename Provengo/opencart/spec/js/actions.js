@@ -61,12 +61,6 @@ function editDateInputAndSave(session,data){
   session.click(xpaths.adminSide.saveButton)
   sync( {request: Event("End(EditDateInput)")})
 }
-// function assertUnfoundItem(session){
-//     sync({request: Event("Start(assertUnfoundItem)")})
-//     session.assertText(xpaths.customerSide.notFoundMsg, "There is no product that matches the search criteria.")
-//     sync({request: Event("End(assertUnfoundItem)")})
-// }
-
 
 
 function checkoutItem(session) {
