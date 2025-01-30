@@ -86,7 +86,7 @@ We tested the **checkout process and product availability** in OpenCart. Our foc
 * The admin successfully updates the **Date Available** field
 * The product becomes **hidden** from customers until the specified date
 
-You can watch running exmaples of the scenrios in the following link - [https://drive.google.com/drive/folders/1ZNwwiG0w9i_5QZJruwM1WVguodLU4jxu]
+You can watch running exmaples of both scenarios in the following link: [https://drive.google.com/drive/folders/1ZNwwiG0w9i_5QZJruwM1WVguodLU4jxu]
 
 ## How We Tested
 
